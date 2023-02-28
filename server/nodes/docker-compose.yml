@@ -1,0 +1,25 @@
+version: "3.3"
+  #networks:
+  #  lnnet:
+
+services:
+  bitcoin-core:
+    image: ruimarinho/bitcoin-core
+    container_name: bitcoind
+    command:
+      -printtoconsole
+      -signet=1
+
+      #  bitcoind:
+      #    container_name: bitcoind
+      #    build:
+      #        context: bitcoind
+      #    image: lnbook/bitcoind:latest
+      #    networks:
+      #      - lnnet
+      #    expose:
+      #      - "18443"
+      #      - "12005"
+      #      - "12006"
+      #    restart: always
+      #

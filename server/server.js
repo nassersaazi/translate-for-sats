@@ -33,6 +33,7 @@ app.get("/", (req, res) => {
 require("./app/routes/user.routes")(app);
 require("./app/routes/article.routes")(app);
 require("./app/routes/translation.routes")(app);
+require("./app/routes/bitcoincli.routes")(app);
 require("./app/routes/payment.routes")(app);
 
 

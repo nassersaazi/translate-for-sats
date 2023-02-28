@@ -1,0 +1,13 @@
+fyi - you can run multiple nodes on regtest, you just need to run them on different ports and manually connect them with the `addnode` and `connect` rpcs
+
+sample commands once docker-compose up
+
+## regtest
+- docker exec --user bitcoin bitcoin-server bitcoin-cli -regtest getmininginfo
+
+## signet
+- docker exec --user bitcoin bitcoin-server bitcoin-cli -regtest getmininginfo
+
+
+
+refer to this -> https://github.com/ruimarinho/docker-bitcoin-core
